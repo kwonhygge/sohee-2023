@@ -6,19 +6,33 @@ settings:
 
 importers:
 
-  .: {}
+  .:
+    dependencies:
+      react:
+        specifier: ^18
+        version: 18.2.0
+      react-dom:
+        specifier: ^18
+        version: 18.2.0(react@18.2.0)
+    devDependencies:
+      '@types/react':
+        specifier: ^18.0.25
+        version: 18.2.48
+      eslint:
+        specifier: ^8.6.0
+        version: 8.56.0
+      prettier:
+        specifier: ^3.0.2
+        version: 3.2.4
+      typescript:
+        specifier: ^5.1.6
+        version: 5.3.3
 
   packages/db:
     dependencies:
       '@sanity/vision':
         specifier: ^3.25.0
         version: 3.25.0(@babel/runtime@7.23.8)(@codemirror/lint@6.4.2)(@codemirror/state@6.4.0)(@codemirror/theme-one-dark@6.1.2)(@lezer/common@1.2.1)(codemirror@6.0.1)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)(styled-components@6.1.8)
-      react:
-        specifier: ^18.2.0
-        version: 18.2.0
-      react-dom:
-        specifier: ^18.2.0
-        version: 18.2.0(react@18.2.0)
       react-icons:
         specifier: ^3.11.0
         version: 3.11.0(react@18.2.0)
@@ -35,46 +49,22 @@ importers:
       '@sanity/eslint-config-studio':
         specifier: ^3.0.1
         version: 3.0.1(eslint@8.56.0)(typescript@5.3.3)
-      '@types/react':
-        specifier: ^18.0.25
-        version: 18.2.48
-      eslint:
-        specifier: ^8.6.0
-        version: 8.56.0
-      prettier:
-        specifier: ^3.0.2
-        version: 3.2.4
-      typescript:
-        specifier: ^5.1.6
-        version: 5.3.3
 
   packages/user:
     dependencies:
       next:
         specifier: 14.1.0
         version: 14.1.0(react-dom@18.2.0)(react@18.2.0)
-      react:
-        specifier: ^18
-        version: 18.2.0
-      react-dom:
-        specifier: ^18
-        version: 18.2.0(react@18.2.0)
     devDependencies:
       '@types/node':
         specifier: ^20
         version: 20.11.5
-      '@types/react':
-        specifier: ^18
-        version: 18.2.48
       '@types/react-dom':
         specifier: ^18
         version: 18.2.18
       autoprefixer:
         specifier: ^10.0.1
         version: 10.4.17(postcss@8.4.33)
-      eslint:
-        specifier: ^8
-        version: 8.56.0
       eslint-config-next:
         specifier: 14.1.0
         version: 14.1.0(eslint@8.56.0)(typescript@5.3.3)
@@ -84,9 +74,6 @@ importers:
       tailwindcss:
         specifier: ^3.3.0
         version: 3.4.1
-      typescript:
-        specifier: ^5
-        version: 5.3.3
 
 packages:
 
@@ -3590,6 +3577,7 @@ packages:
       loose-envify: 1.4.0
       object-assign: 4.1.1
     dev: false
+    bundledDependencies: false
 
   /crelt@1.0.6:
     resolution: {integrity: sha512-VQ2MBenTq1fWZUH9DJNGti7kKv6EeAuYr3cLwxUWhIu1baTaXh4Ib5W2CqHVqib4/MqbYGJqiL3Zb8GJZr3l4g==}

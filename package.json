@@ -10,5 +10,15 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "packageManager": "pnpm@8.14.3"
+  "packageManager": "pnpm@8.14.3",
+  "dependencies": {
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "typescript": "^5.1.6",
+    "prettier": "^3.0.2",
+    "eslint": "^8.6.0",
+    "@types/react": "^18.0.25"
+  }
 }
