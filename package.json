@@ -13,7 +13,9 @@
   "packageManager": "pnpm@8.14.3",
   "dependencies": {
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "sanity": "^3.25.0",
+    "@sanity/vision": "^3.25.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.25",
