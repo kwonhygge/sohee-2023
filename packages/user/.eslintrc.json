@@ -1,3 +1,7 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": ["next/core-web-vitals", "google", "plugin:prettier/recommended"],
+  "rules": {
+    "require-jsdoc": "off",
+    "new-cap": "off"
+  }
 }
