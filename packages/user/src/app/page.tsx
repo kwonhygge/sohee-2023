@@ -22,7 +22,7 @@ export default async function Home() {
                         className="mb-8 w-full max-w-3xl rounded-md  p-8 shadow-md"
                     >
                         <h2 className="mb-4 text-2xl font-bold">
-                            {project.name}
+                            {project.title}
                         </h2>
                         <p className="text-gray-600">{scopes}</p>
                         <Image

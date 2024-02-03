@@ -1,7 +1,7 @@
-import { ScopeType } from '@/constants'
+import { ProjectName, ScopeType } from '@/constants'
 
 export type ProjectData = {
-    name: string
+    name: ProjectName
     title: string
     scopes: ScopeType[]
     id: string

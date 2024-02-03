@@ -32,8 +32,14 @@ export default defineType({
       title: 'Year',
       type: 'string',
     }),
+    defineField({
+      name: 'order',
+      title: 'Order',
+      type: 'number',
+    }),
   ],
   preview: {
-    select: {title: 'name', media: 'image'},
+    select: {title: 'title'},
   },
+  orderings: [{title: 'Order', name: 'order', by: [{field: 'order', direction: 'asc'}]}],
 })
