@@ -1,6 +1,7 @@
 {
   "extends": ["next/core-web-vitals", "google", "plugin:prettier/recommended"],
   "rules": {
+    "camelcase": [0, { "properties": "always" }],
     "require-jsdoc": "off",
     "new-cap": "off"
   }

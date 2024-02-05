@@ -1,11 +1,11 @@
 import { PROJECT_NAMES, ProjectName, SCOPE_TYPE, ScopeType } from '@/constants'
-import WorkersDdayMain from '@/static/main-covers/workers-dday-main.png'
-import AnimationCenterMain from '@/static/main-covers/animation-center-main.png'
-import BabyDrawMain from '@/static/main-covers/baby-draw-main.png'
-import DyneMain from '@/static/main-covers/dyne-main.png'
-import FlyingEarthMain from '@/static/main-covers/flying-earth-main.png'
-import SunSunMain from '@/static/main-covers/sun-sun-main.png'
-import TurnableMain from '@/static/main-covers/turnable-main.png'
+import WorkersDdayMain from '@/static/img/main-covers/workers-dday-main.png'
+import AnimationCenterMain from '@/static/img/main-covers/animation-center-main.png'
+import BabyDrawMain from '@/static/img/main-covers/baby-draw-main.png'
+import DyneMain from '@/static/img/main-covers/dyne-main.png'
+import FlyingEarthMain from '@/static/img/main-covers/flying-earth-main.png'
+import SunSunMain from '@/static/img/main-covers/sun-sun-main.png'
+import TurnableMain from '@/static/img/main-covers/turnable-main.png'
 
 import { StaticImageData } from 'next/image'
 

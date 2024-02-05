@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-family: Noto Sans KR, -apple-system,
+  BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Segoe UI', sans-serif,
+  'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  --font-size-16: 16px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  background: linear-gradient(180deg, #ebebeb 0%, #f4efeb 51.04%, #ebebeb 100%) repeat;
+  color: #000;
+  font-family: var(--font-family);
+  font-size: var(--font-size-16);
+}
