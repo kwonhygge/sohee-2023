@@ -1,8 +1,9 @@
 import type { Metadata } from 'next'
 import { Noto_Sans_KR } from 'next/font/google'
 import './globals.scss'
+import Header from '@/components/Header'
 
-const inter = Noto_Sans_KR({ subsets: ['latin'] })
+const notoSansKR = Noto_Sans_KR({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
     title: 'Create Next App',
@@ -16,7 +17,10 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="ko">
-            <body className={inter.className}>{children}</body>
+            <body className={notoSansKR.className}>
+                <Header />
+                {children}
+            </body>
         </html>
     )
 }

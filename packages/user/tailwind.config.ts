@@ -12,6 +12,8 @@ const config: Config = {
                 charcoal: '#434343',
             },
             spacing: {
+                '7.5': '1.875rem',
+                '13.5': '3.375rem',
                 '25': '6.25rem',
             },
         },
