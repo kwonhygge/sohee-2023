@@ -2,7 +2,7 @@ import { manrope } from '@/styles/font'
 export default function Header() {
     return (
         <header className={`${manrope.className}`}>
-            <nav className="mx-auto flex max-w-[1200px] items-center justify-between pt-7.5">
+            <nav className="mx-auto flex max-w-[1200px] items-center justify-between px-4 pt-7.5 md:px-7.5  lg:px-0">
                 <h1 className="text-3xl font-bold">
                     <a href="/list">hee</a>
                 </h1>

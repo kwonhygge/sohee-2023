@@ -12,7 +12,7 @@ export default async function Home() {
 
     return (
         <main className="flex min-h-screen flex-col items-center py-32">
-            <ul className="flex max-w-[1200px] flex-wrap gap-x-20 gap-y-25">
+            <ul className="flex max-w-[1200px] flex-wrap justify-center gap-x-20 gap-y-25 px-4 lg:justify-normal lg:px-0">
                 {data.map((project) => {
                     const scopes = project.scopes
                         ?.map((scope) => ScopeTypeMap[scope])
