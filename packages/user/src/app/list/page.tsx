@@ -13,7 +13,7 @@ export default async function Home() {
     return (
         <main className="flex min-h-screen flex-col items-center py-32">
             <ul className="flex max-w-[1200px] flex-wrap justify-center gap-x-20 gap-y-25 px-4 lg:justify-normal lg:px-0">
-                {data.map((project) => {
+                {data.map((project, index) => {
                     const scopes = project.scopes
                         ?.map((scope) => ScopeTypeMap[scope])
                         .join(' / ')
@@ -41,6 +41,7 @@ export default async function Home() {
                             </p>
                             <Link className="group" href={detailUrl}>
                                 <Image
+                                    priority={index < 2}
                                     className="transition duration-300 ease-in-out group-hover:opacity-80"
                                     src={currentImage.image}
                                     alt={currentImage.alt}

@@ -8,9 +8,9 @@ export async function getProjects<T>(): Promise<T> {
     }`,
     )
 }
-export async function getProjectByOrderId(order: number) {
+export async function getProjectByOrderId<T>(order: number): Promise<T> {
     return client.fetch(
-        `*[_type == "project" && order == "${order}"][0]{
+        `*[_type == "project" && order == ${order}][0]{
       ...,
       "id":_id
     }`,

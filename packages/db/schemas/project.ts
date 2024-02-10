@@ -37,6 +37,21 @@ export default defineType({
       title: 'Order',
       type: 'number',
     }),
+    defineField({
+      name: 'type',
+      title: 'Type',
+      type: 'string',
+    }),
+    defineField({
+      name: 'roles',
+      title: 'Roles',
+      of: [
+        {
+          type: 'string',
+        },
+      ],
+      type: 'array',
+    }),
   ],
   preview: {
     select: {title: 'title'},

@@ -1,14 +1,29 @@
+export const PROJECT_TYPE = {
+    COMPANY_WORK: 'COMPANY_WORK',
+}
+export type ProjectType = (typeof PROJECT_TYPE)[keyof typeof PROJECT_TYPE]
+export const ROLE_TYPE = {
+    CONTENTS_PLANNING: 'CONTENTS_PLANNING',
+    DIRECTOR: 'DIRECTOR',
+    EDITOR: 'EDITOR',
+    MARKETER: 'MARKETER',
+    MANAGER: 'MANAGER',
+    PLANNER: 'PLANNER',
+    PM: 'PM',
+}
+export type RoleType = (typeof ROLE_TYPE)[keyof typeof ROLE_TYPE]
 export const SCOPE_TYPE = {
     BRAND_FILM: 'BRAND_FILM',
     BRAND_STORY: 'BRAND_STORY',
     BRAND_IDENTITY: 'BRAND_IDENTITY',
+    EXHIBITION: 'EXHIBITION',
     GOODS: 'GOODS',
     GRAPHIC_MOTIF: 'GRAPHIC_MOTIF',
     MARKETING: 'MARKETING',
-    MANAGING: 'MANAGING',
     NAMING: 'NAMING',
     PACKAGE: 'PACKAGE',
     PHILOSOPHY: 'PHILOSOPHY',
+    SPACE_OPERATION: 'SPACE_OPERATION',
     WORKSHOP: 'WORKSHOP',
 } as const
 export type ScopeType = (typeof SCOPE_TYPE)[keyof typeof SCOPE_TYPE]
