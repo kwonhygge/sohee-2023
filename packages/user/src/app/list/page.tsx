@@ -11,7 +11,7 @@ export default async function Home() {
     const data = await getProjects<ProjectData[]>()
 
     return (
-        <main className="flex min-h-screen flex-col items-center py-32">
+        <div className="flex min-h-screen flex-col items-center pb-32 pt-48">
             <ul className="flex max-w-[1200px] flex-wrap justify-center gap-x-20 gap-y-25 px-4 lg:justify-normal lg:px-0">
                 {data.map((project, index) => {
                     const scopes = project.scopes
@@ -53,6 +53,6 @@ export default async function Home() {
                     )
                 })}
             </ul>
-        </main>
+        </div>
     )
 }

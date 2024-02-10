@@ -14,7 +14,7 @@ export default function TitleSection(props: TitleSectionProps) {
             <h2 className="text-3xl font-bold">{data.title}</h2>
             <dl
                 className={classNames(
-                    'mt-5 grid grid-cols-[max-content,auto] gap-x-11 gap-y-1.5 border-y border-neoBlack py-5.5 text-xl',
+                    'mt-5 grid grid-cols-[max-content,auto] gap-x-11 gap-y-1.5 border-y border-neo-black py-5.5 text-xl',
                     manrope.className,
                 )}
             >

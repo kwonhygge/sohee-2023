@@ -9,8 +9,10 @@ const config: Config = {
     theme: {
         extend: {
             colors: {
-                neoBlack: '#1D1D1D',
+                'neo-black': '#1D1D1D',
                 charcoal: '#434343',
+                gray92: '#ebebeb',
+                isabelline: '#f4efeb',
             },
             spacing: {
                 '5.5': '1.375rem',
