@@ -38,9 +38,5 @@ export default async function Page({ params }: { params: Params }) {
         }
     }
 
-    return (
-        <div className="mx-auto mb-13 max-w-[900px] bg-white">
-            {renderContent(data.name)}
-        </div>
-    )
+    return <div className="mb-13 bg-white">{renderContent(data.name)}</div>
 }
