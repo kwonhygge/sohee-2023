@@ -24,6 +24,7 @@ export default function WorkersDDay(props: ProjectCommonProps) {
                 src={WorkersDdayCoverImage}
                 alt={'workers-dday-cover'}
                 priority
+                placeholder={'blur'}
             />
             <div className={PROJECT_CLASS_NAMES.PROJECT_DETAIL_WRAPPER}>
                 <TitleSection data={data} />
@@ -39,6 +40,7 @@ export default function WorkersDDay(props: ProjectCommonProps) {
                             alt={'workers-dday-1'}
                             width={900}
                             height={600}
+                            placeholder={'blur'}
                         />
                     }
                 >
@@ -54,6 +56,7 @@ export default function WorkersDDay(props: ProjectCommonProps) {
                                 alt={'workers-dday-2'}
                                 width={900}
                                 height={450}
+                                placeholder={'blur'}
                             />
                         }
                     />
@@ -79,6 +82,7 @@ export default function WorkersDDay(props: ProjectCommonProps) {
                                 alt={'workers-dday-3'}
                                 width={900}
                                 height={450}
+                                placeholder={'blur'}
                             />
                         }
                     />
@@ -105,6 +109,7 @@ export default function WorkersDDay(props: ProjectCommonProps) {
                                 alt={'workers-dday-4'}
                                 width={900}
                                 height={600}
+                                placeholder={'blur'}
                             />
                         }
                     />
@@ -130,6 +135,7 @@ export default function WorkersDDay(props: ProjectCommonProps) {
                                 alt={'workers-dday-5'}
                                 width={900}
                                 height={600}
+                                placeholder={'blur'}
                             />
                         }
                     />
@@ -145,6 +151,7 @@ export default function WorkersDDay(props: ProjectCommonProps) {
                                 alt={'workers-dday-6'}
                                 width={900}
                                 height={600}
+                                placeholder={'blur'}
                             />
                         }
                     />
@@ -161,12 +168,14 @@ export default function WorkersDDay(props: ProjectCommonProps) {
                                     alt={'workers-dday-7'}
                                     width={900}
                                     height={450}
+                                    placeholder={'blur'}
                                 />
                                 <Image
                                     src={Image8}
                                     alt={'workers-dday-8'}
                                     width={900}
                                     height={450}
+                                    placeholder={'blur'}
                                 />
                             </div>
                         }
@@ -184,12 +193,14 @@ export default function WorkersDDay(props: ProjectCommonProps) {
                                     alt={'workers-dday-9'}
                                     width={900}
                                     height={600}
+                                    placeholder={'blur'}
                                 />
                                 <Image
                                     src={Image10}
                                     alt={'workers-dday-10'}
                                     width={900}
                                     height={600}
+                                    placeholder={'blur'}
                                 />
                             </div>
                         }

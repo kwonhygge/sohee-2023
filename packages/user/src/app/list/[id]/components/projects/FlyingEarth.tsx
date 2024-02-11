@@ -16,7 +16,12 @@ export default function FlyingEarth(props: ProjectCommonProps) {
     const { data } = props
     return (
         <>
-            <Image src={CoverImage} alt={'flying-earth-cover'} priority />
+            <Image
+                src={CoverImage}
+                alt={'flying-earth-cover'}
+                priority
+                placeholder={'blur'}
+            />
             <div className={PROJECT_CLASS_NAMES.PROJECT_DETAIL_WRAPPER}>
                 <TitleSection data={data} />
                 <ContentWrapper
@@ -32,6 +37,7 @@ export default function FlyingEarth(props: ProjectCommonProps) {
                                 alt={'flying-earth-1'}
                                 width={900}
                                 height={532}
+                                placeholder={'blur'}
                             />
                             <span className="text-xs">
                                 *인테리어 - 블랭크건축사무소
@@ -51,6 +57,7 @@ export default function FlyingEarth(props: ProjectCommonProps) {
                                 alt={'flying-earth-2'}
                                 width={900}
                                 height={450}
+                                placeholder={'blur'}
                             />
                         }
                     />
@@ -66,6 +73,7 @@ export default function FlyingEarth(props: ProjectCommonProps) {
                                 alt={'flying-earth-3'}
                                 width={900}
                                 height={450}
+                                placeholder={'blur'}
                             />
                         }
                     />
@@ -100,6 +108,7 @@ export default function FlyingEarth(props: ProjectCommonProps) {
                                 alt={'flying-earth-4'}
                                 width={900}
                                 height={500}
+                                placeholder={'blur'}
                             />
                         }
                     />
@@ -116,12 +125,14 @@ export default function FlyingEarth(props: ProjectCommonProps) {
                                     alt={'flying-earth-5'}
                                     width={900}
                                     height={500}
+                                    placeholder={'blur'}
                                 />
                                 <Image
                                     src={Image6}
                                     alt={'flying-earth-6'}
                                     width={900}
                                     height={500}
+                                    placeholder={'blur'}
                                 />
                             </div>
                         }

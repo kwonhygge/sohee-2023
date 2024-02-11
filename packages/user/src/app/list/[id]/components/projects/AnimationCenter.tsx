@@ -14,7 +14,12 @@ export default function AnimationCenter(props: ProjectCommonProps) {
     const { data } = props
     return (
         <>
-            <Image src={CoverImage} alt={'animation-center-cover'} priority />
+            <Image
+                src={CoverImage}
+                alt={'animation-center-cover'}
+                priority
+                placeholder={'blur'}
+            />
             <div className={PROJECT_CLASS_NAMES.PROJECT_DETAIL_WRAPPER}>
                 <TitleSection data={data} />
                 <ContentWrapper
@@ -34,6 +39,7 @@ export default function AnimationCenter(props: ProjectCommonProps) {
                                 alt={'animation-center-1'}
                                 width={900}
                                 height={550}
+                                placeholder={'blur'}
                             />
                         }
                     />
@@ -57,12 +63,14 @@ export default function AnimationCenter(props: ProjectCommonProps) {
                                     alt={'animation-center-2'}
                                     width={900}
                                     height={416}
+                                    placeholder={'blur'}
                                 />
                                 <Image
                                     src={Image3}
                                     alt={'animation-center-3'}
                                     width={900}
                                     height={416}
+                                    placeholder={'blur'}
                                 />
                             </div>
                         }
@@ -80,6 +88,7 @@ export default function AnimationCenter(props: ProjectCommonProps) {
                                     alt={'animation-center-4'}
                                     width={900}
                                     height={566}
+                                    placeholder={'blur'}
                                 />
                                 <span className="text-xs">
                                     *일러스트 - AE SHOONG

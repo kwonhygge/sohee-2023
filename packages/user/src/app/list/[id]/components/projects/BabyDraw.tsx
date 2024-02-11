@@ -34,12 +34,14 @@ export default function BabyDraw(props: ProjectCommonProps) {
                                 alt={'baby-draw-1'}
                                 width={900}
                                 height={600}
+                                placeholder={'blur'}
                             />
                             <Image
                                 src={Image2}
                                 alt={'baby-draw-2'}
                                 width={900}
                                 height={600}
+                                placeholder={'blur'}
                             />
                         </div>
                     }
@@ -56,6 +58,7 @@ export default function BabyDraw(props: ProjectCommonProps) {
                                 alt={'baby-draw-3'}
                                 width={900}
                                 height={450}
+                                placeholder={'blur'}
                             />
                         }
                     />
@@ -80,6 +83,7 @@ export default function BabyDraw(props: ProjectCommonProps) {
                                 alt={'baby-draw-4'}
                                 width={900}
                                 height={450}
+                                placeholder={'blur'}
                             />
                         }
                     />
@@ -95,6 +99,7 @@ export default function BabyDraw(props: ProjectCommonProps) {
                                 alt={'baby-draw-5'}
                                 width={900}
                                 height={238}
+                                placeholder={'blur'}
                             />
                         }
                     />
@@ -120,6 +125,7 @@ export default function BabyDraw(props: ProjectCommonProps) {
                                 alt={'baby-draw-6'}
                                 width={900}
                                 height={620}
+                                placeholder={'blur'}
                             />
                         }
                     />
@@ -144,12 +150,14 @@ export default function BabyDraw(props: ProjectCommonProps) {
                                     alt={'baby-draw-7'}
                                     width={900}
                                     height={500}
+                                    placeholder={'blur'}
                                 />
                                 <Image
                                     src={Image8}
                                     alt={'baby-draw-8'}
                                     width={900}
                                     height={500}
+                                    placeholder={'blur'}
                                 />
                             </div>
                         }

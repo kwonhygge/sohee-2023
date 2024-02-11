@@ -20,7 +20,12 @@ export default function BabyDraw(props: ProjectCommonProps) {
     const { data } = props
     return (
         <>
-            <Image src={CoverImage} alt={'baby-draw-cover'} priority />
+            <Image
+                src={CoverImage}
+                alt={'baby-draw-cover'}
+                priority
+                placeholder={'blur'}
+            />
             <div className={PROJECT_CLASS_NAMES.PROJECT_DETAIL_WRAPPER}>
                 <TitleSection data={data} />
                 <ContentWrapper
@@ -35,6 +40,7 @@ export default function BabyDraw(props: ProjectCommonProps) {
                             alt={'baby-draw-1'}
                             width={900}
                             height={564}
+                            placeholder={'blur'}
                         />
                     }
                 >
@@ -73,12 +79,14 @@ export default function BabyDraw(props: ProjectCommonProps) {
                                     alt={'baby-draw-2'}
                                     width={900}
                                     height={450}
+                                    placeholder={'blur'}
                                 />
                                 <Image
                                     src={Image3}
                                     alt={'baby-draw-3'}
                                     width={900}
                                     height={450}
+                                    placeholder={'blur'}
                                 />
                             </div>
                         }
@@ -95,6 +103,7 @@ export default function BabyDraw(props: ProjectCommonProps) {
                                 alt={'baby-draw-4'}
                                 width={900}
                                 height={600}
+                                placeholder={'blur'}
                             />
                         }
                     />
@@ -113,6 +122,7 @@ export default function BabyDraw(props: ProjectCommonProps) {
                                             alt={'baby-draw-5'}
                                             width={440}
                                             height={440}
+                                            placeholder={'blur'}
                                         />
                                     </div>
                                     <div className="absolute bottom-0 right-0 h-fit">
@@ -121,6 +131,7 @@ export default function BabyDraw(props: ProjectCommonProps) {
                                             alt={'baby-draw-6'}
                                             width={440}
                                             height={440}
+                                            placeholder={'blur'}
                                         />
                                     </div>
                                 </div>
@@ -129,6 +140,7 @@ export default function BabyDraw(props: ProjectCommonProps) {
                                     alt={'baby-draw-7'}
                                     width={900}
                                     height={600}
+                                    placeholder={'blur'}
                                 />
                             </div>
                         }
@@ -146,18 +158,21 @@ export default function BabyDraw(props: ProjectCommonProps) {
                                     alt={'baby-draw-8'}
                                     width={900}
                                     height={500}
+                                    placeholder={'blur'}
                                 />
                                 <Image
                                     src={Image9}
                                     alt={'baby-draw-9'}
                                     width={900}
                                     height={332}
+                                    placeholder={'blur'}
                                 />
                                 <Image
                                     src={Image10}
                                     alt={'baby-draw-10'}
                                     width={900}
                                     height={480}
+                                    placeholder={'blur'}
                                 />
                             </div>
                         }

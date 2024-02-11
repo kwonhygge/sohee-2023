@@ -47,6 +47,7 @@ export default async function Home() {
                                     alt={currentImage.alt}
                                     width={560}
                                     height={370}
+                                    placeholder={'blur'}
                                 />
                             </Link>
                         </li>

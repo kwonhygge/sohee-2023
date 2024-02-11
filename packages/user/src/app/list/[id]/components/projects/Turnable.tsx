@@ -18,7 +18,12 @@ export default function Turnable(props: ProjectCommonProps) {
     const { data } = props
     return (
         <>
-            <Image src={CoverImage} alt={'turnable-cover'} priority />
+            <Image
+                src={CoverImage}
+                alt={'turnable-cover'}
+                priority
+                placeholder={'blur'}
+            />
             <div className={PROJECT_CLASS_NAMES.PROJECT_DETAIL_WRAPPER}>
                 <TitleSection data={data} />
                 <ContentWrapper
@@ -35,6 +40,7 @@ export default function Turnable(props: ProjectCommonProps) {
                                 alt={'turnable-1'}
                                 width={900}
                                 height={495}
+                                placeholder={'blur'}
                             />
                             <div className="flex justify-between">
                                 <Image
@@ -42,12 +48,14 @@ export default function Turnable(props: ProjectCommonProps) {
                                     alt={'turnable-2'}
                                     width={440}
                                     height={440}
+                                    placeholder={'blur'}
                                 />
                                 <Image
                                     src={Image3}
                                     alt={'turnable-3'}
                                     width={440}
                                     height={440}
+                                    placeholder={'blur'}
                                 />
                             </div>
                         </div>
@@ -73,6 +81,7 @@ export default function Turnable(props: ProjectCommonProps) {
                                 alt={'turnable-4'}
                                 width={900}
                                 height={1178}
+                                placeholder={'blur'}
                             />
                         }
                     />
@@ -98,6 +107,7 @@ export default function Turnable(props: ProjectCommonProps) {
                                 alt={'turnable-5'}
                                 width={900}
                                 height={549}
+                                placeholder={'blur'}
                             />
                         }
                     />
@@ -123,6 +133,7 @@ export default function Turnable(props: ProjectCommonProps) {
                                 alt={'turnable-6'}
                                 width={900}
                                 height={420}
+                                placeholder={'blur'}
                             />
                         }
                     />
@@ -148,6 +159,7 @@ export default function Turnable(props: ProjectCommonProps) {
                                 alt={'turnable-7'}
                                 width={900}
                                 height={540}
+                                placeholder={'blur'}
                             />
                         }
                     />
@@ -172,6 +184,7 @@ export default function Turnable(props: ProjectCommonProps) {
                                 alt={'turnable-8'}
                                 width={900}
                                 height={525}
+                                placeholder={'blur'}
                             />
                         }
                     />

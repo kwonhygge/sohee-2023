@@ -21,7 +21,12 @@ export default function Dyne(props: ProjectCommonProps) {
     const { data } = props
     return (
         <>
-            <Image src={CoverImage} alt={'dyne-cover'} priority />
+            <Image
+                src={CoverImage}
+                alt={'dyne-cover'}
+                priority
+                placeholder={'blur'}
+            />
             <div className={PROJECT_CLASS_NAMES.PROJECT_DETAIL_WRAPPER}>
                 <TitleSection data={data} />
                 <ContentWrapper
@@ -34,6 +39,7 @@ export default function Dyne(props: ProjectCommonProps) {
                             alt={'dyne-1'}
                             width={900}
                             height={450}
+                            placeholder={'blur'}
                         />
                     }
                 >
@@ -61,12 +67,14 @@ export default function Dyne(props: ProjectCommonProps) {
                                     alt={'dyne-2'}
                                     width={900}
                                     height={450}
+                                    placeholder={'blur'}
                                 />
                                 <Image
                                     src={Image3}
                                     alt={'dyne-3'}
                                     width={900}
                                     height={450}
+                                    placeholder={'blur'}
                                 />
                             </div>
                         }
@@ -84,12 +92,14 @@ export default function Dyne(props: ProjectCommonProps) {
                                     alt={'dyne-4'}
                                     width={900}
                                     height={450}
+                                    placeholder={'blur'}
                                 />
                                 <Image
                                     src={Image5}
                                     alt={'dyne-5'}
                                     width={900}
                                     height={450}
+                                    placeholder={'blur'}
                                 />
                             </div>
                         }
@@ -116,12 +126,14 @@ export default function Dyne(props: ProjectCommonProps) {
                                     alt={'dyne-6'}
                                     width={900}
                                     height={300}
+                                    placeholder={'blur'}
                                 />
                                 <Image
                                     src={Image7}
                                     alt={'dyne-7'}
                                     width={900}
                                     height={450}
+                                    placeholder={'blur'}
                                 />
                             </div>
                         }
@@ -149,6 +161,7 @@ export default function Dyne(props: ProjectCommonProps) {
                                 alt={'dyne-8'}
                                 width={900}
                                 height={450}
+                                placeholder={'blur'}
                             />
                         }
                     />
@@ -164,6 +177,7 @@ export default function Dyne(props: ProjectCommonProps) {
                                 alt={'dyne-9'}
                                 width={900}
                                 height={660}
+                                placeholder={'blur'}
                             />
                         }
                     />
@@ -180,12 +194,14 @@ export default function Dyne(props: ProjectCommonProps) {
                                     alt={'dyne-10'}
                                     width={900}
                                     height={600}
+                                    placeholder={'blur'}
                                 />
                                 <Image
                                     src={Image11}
                                     alt={'dyne-11'}
                                     width={900}
                                     height={600}
+                                    placeholder={'blur'}
                                 />
                             </div>
                         }
