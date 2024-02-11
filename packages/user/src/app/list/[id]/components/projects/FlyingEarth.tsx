@@ -26,12 +26,17 @@ export default function FlyingEarth(props: ProjectCommonProps) {
                         '경기도 과천시의 첫 청년공간 비행지구를 브랜딩했습니다. 프로젝트의 주요 목표는 지역 청년들의 이야기를 공간 속에 녹여내는 것이었습니다. 워크숍, 공모전 등 참여형 프로세스를 통해 청년들의 목소리를 가까이에서 듣고 브랜딩에 반영했습니다. 공간의 컨셉 ‘푸른 낭만’은 녹음이 우거진 과천시의 지역적 색채와 청춘의 맑은 이미지를 담아 만들어졌습니다. 바람의 결이 느껴지는 로고 타입과 별 그래픽을 활용한 심볼로 푸른 지구별을 자유롭게 여행하는 청년들의 낭만적 감성을 전달합니다.'
                     }
                     descriptionImage={
-                        <Image
-                            src={Image1}
-                            alt={'flying-earth-1'}
-                            width={900}
-                            height={532}
-                        />
+                        <div>
+                            <Image
+                                src={Image1}
+                                alt={'flying-earth-1'}
+                                width={900}
+                                height={532}
+                            />
+                            <span className="text-xs">
+                                *인테리어 - 블랭크건축사무소
+                            </span>
+                        </div>
                     }
                 >
                     <ContentSection

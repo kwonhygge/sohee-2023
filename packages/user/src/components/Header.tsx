@@ -8,7 +8,7 @@ export default function Header() {
                 </h1>
                 <ul className="flex items-center gap-x-13.5">
                     <li>
-                        <a href="/works">Works</a>
+                        <a href="/list">Works</a>
                     </li>
                     <li>
                         <a href="/info">Info</a>
