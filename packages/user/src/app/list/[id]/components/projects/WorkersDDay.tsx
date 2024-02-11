@@ -14,6 +14,7 @@ import Image7 from '@/static/img/detail/workers-dday/7.png'
 import Image8 from '@/static/img/detail/workers-dday/8.png'
 import Image9 from '@/static/img/detail/workers-dday/9.png'
 import Image10 from '@/static/img/detail/workers-dday/10.png'
+import ContentWrapper from '@/app/list/[id]/components/ContentWrapper'
 
 export default function WorkersDDay(props: ProjectCommonProps) {
     const { data } = props
@@ -26,29 +27,21 @@ export default function WorkersDDay(props: ProjectCommonProps) {
             />
             <div className={PROJECT_CLASS_NAMES.PROJECT_DETAIL_WRAPPER}>
                 <TitleSection data={data} />
-                <div className={PROJECT_CLASS_NAMES.CONTENT_WRAPPER}>
-                    <section>
-                        <p className="lg:text-lg">
-                            일삶 속 특별한 선물
-                            <br />
-                            <br />
-                            워커스디데이는 의미있는 사회적 제품으로 이루어진
-                            기프트 박스를 통해 기업 임직원의 기념일을 챙기는
-                            서비스입니다. 제품에 담긴 선한 가치가 기분 좋은
-                            특별함으로 전해질 수 있도록 소비자 경험의 여러
-                            측면을 고려하여 브랜딩을 진행했습니다. 브랜드 네임
-                            ‘워커스디데이’는 직원의 기념일을 소중하게 대하고
-                            기억하는 마음이 깃들어 있습니다. 사람과 사람 사이
-                            감정적 상호작용에 집중하는 전략을 통해 단순한 선물을
-                            넘어 추억을 전하는 브랜드가 되고자 합니다.
-                        </p>
-                    </section>
-                    <Image
-                        src={Image1}
-                        alt={'workers-dday-1'}
-                        width={900}
-                        height={600}
-                    />
+                <ContentWrapper
+                    descriptionText={
+                        '일삶 속 특별한 선물\n' +
+                        '\n' +
+                        '워커스디데이는 의미있는 사회적 제품으로 이루어진 기프트 박스를 통해 기업 임직원의 기념일을 챙기는 서비스입니다. 제품에 담긴 선한 가치가 기분 좋은 특별함으로 전해질 수 있도록 소비자 경험의 여러 측면을 고려하여 브랜딩을 진행했습니다. 브랜드 네임 ‘워커스디데이’는 직원의 기념일을 소중하게 대하고 기억하는 마음이 깃들어 있습니다. 사람과 사람 사이 감정적 상호작용에 집중하는 전략을 통해 단순한 선물을 넘어 추억을 전하는 브랜드가 되고자 합니다.'
+                    }
+                    descriptionImage={
+                        <Image
+                            src={Image1}
+                            alt={'workers-dday-1'}
+                            width={900}
+                            height={600}
+                        />
+                    }
+                >
                     <ContentSection
                         koreanTitle={'타겟 설정 & 가치 정의'}
                         englishTitle={'Target and Values'}
@@ -201,7 +194,7 @@ export default function WorkersDDay(props: ProjectCommonProps) {
                             </div>
                         }
                     />
-                </div>
+                </ContentWrapper>
             </div>
         </>
     )
