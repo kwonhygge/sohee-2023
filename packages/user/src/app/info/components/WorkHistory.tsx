@@ -27,6 +27,7 @@ export default function WorkHistory() {
                         <Image
                             src={MeaderLogo}
                             alt={'meader-logo'}
+                            placeholder={'blur'}
                             width={144}
                             height={80}
                         />
@@ -55,6 +56,7 @@ export default function WorkHistory() {
                         <Image
                             src={AnimationCenterLogo}
                             alt={'animation-center-logo'}
+                            placeholder={'blur'}
                             width={144}
                             height={80}
                         />

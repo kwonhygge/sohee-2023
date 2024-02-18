@@ -13,6 +13,7 @@ export default function MyInfo(props: MyInfoProps) {
             <Image
                 width={326}
                 height={377}
+                placeholder={'blur'}
                 alt={'profile-image'}
                 src={data.profileImageUrl}
             />
