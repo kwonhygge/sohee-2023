@@ -42,7 +42,7 @@ export default function Turnable(props: ProjectCommonProps) {
                                 height={495}
                                 placeholder={'blur'}
                             />
-                            <div className="flex justify-between">
+                            <div className="flex flex-col justify-between lg:flex-row">
                                 <Image
                                     src={Image2}
                                     alt={'turnable-2'}

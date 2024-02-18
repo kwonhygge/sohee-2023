@@ -10,3 +10,10 @@ export type ProjectData = {
     id: string
     year: string
 }
+
+export type MyInfoData = {
+    name: string
+    profileImageUrl: string
+    position: string
+    introduction: string
+}

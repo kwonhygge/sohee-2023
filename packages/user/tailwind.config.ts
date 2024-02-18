@@ -11,10 +11,13 @@ const config: Config = {
             colors: {
                 'neo-black': '#1D1D1D',
                 charcoal: '#434343',
+                gray60: '#999999',
                 gray92: '#ebebeb',
+                gray94: '#f0f0f0',
                 isabelline: '#f4efeb',
             },
             spacing: {
+                '2.5': '0.625rem', // 10px
                 '5.5': '1.375rem', // 22px
                 '7.5': '1.875rem', // 30px
                 '8.5': '2.125rem', // 34px
