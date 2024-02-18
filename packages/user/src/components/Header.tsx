@@ -1,7 +1,9 @@
 import { manrope } from '@/styles/font'
 export default function Header() {
     return (
-        <header className={`${manrope.className} absolute top-7.5 w-full`}>
+        <header
+            className={`${manrope.className} fixed top-0 z-10 w-full bg-black/5 py-4 backdrop-blur-xl`}
+        >
             <nav className="mx-auto flex w-full max-w-[1200px] items-center justify-between px-4 md:px-7.5 lg:px-0">
                 <h1 className="text-xl font-bold lg:text-3xl">
                     <a href="/">hee</a>
