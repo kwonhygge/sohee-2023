@@ -2,10 +2,12 @@ import { getProjects } from '@/services/project'
 import { ProjectData } from '@/interfaces'
 import { MainImageMap, ScopeTypeMap } from '@/utils'
 import ArrowIcon from '@/static/svg/arrow-icon.svg'
+import { manrope } from '@/styles/font'
 
 import Image from 'next/image'
 import Link from 'next/link'
 import { PAGE_URL } from '@/constants'
+import classNames from 'classnames'
 
 export default async function Home() {
     const data = await getProjects<ProjectData[]>()
@@ -36,7 +38,12 @@ export default async function Home() {
                                 </Link>
                             </header>
 
-                            <p className="mb-7 text-sm font-light text-charcoal">
+                            <p
+                                className={classNames(
+                                    manrope.className,
+                                    'mb-7 text-sm font-light text-charcoal',
+                                )}
+                            >
                                 {scopes}
                             </p>
                             <Link className="group" href={detailUrl}>
