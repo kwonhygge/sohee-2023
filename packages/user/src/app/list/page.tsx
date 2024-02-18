@@ -8,6 +8,12 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { PAGE_URL } from '@/constants'
 import classNames from 'classnames'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+    title: 'portfolio | sohee.park',
+    description: 'Brand Marketer & Strategist',
+}
 
 export default async function Home() {
     const data = await getProjects<ProjectData[]>()
