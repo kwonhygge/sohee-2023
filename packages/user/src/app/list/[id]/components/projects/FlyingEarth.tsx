@@ -11,6 +11,7 @@ import Image4 from '@/static/img/detail/flying-earth/4.png'
 import Image5 from '@/static/img/detail/flying-earth/5.png'
 import Image6 from '@/static/img/detail/flying-earth/6.png'
 import ContentSection from '@/app/list/[id]/components/ContentSection'
+import classNames from 'classnames'
 
 export default function FlyingEarth(props: ProjectCommonProps) {
     const { data } = props
@@ -81,7 +82,12 @@ export default function FlyingEarth(props: ProjectCommonProps) {
                         koreanTitle={'슬로건 개발'}
                         englishTitle={'Slogan'}
                         content={
-                            <p className={PROJECT_CLASS_NAMES.BODY_CONTENT}>
+                            <p
+                                className={classNames(
+                                    PROJECT_CLASS_NAMES.BODY_CONTENT,
+                                    '!mb-0',
+                                )}
+                            >
                                 슬로건 개발 단계에서 지역 공모전을 진행하여 지역
                                 사회의 참여와 관심을 이끌어냈습니다. 지역
                                 주민들의 다양한 아이디어를 수집하고 가공하여
