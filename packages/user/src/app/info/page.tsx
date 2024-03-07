@@ -3,7 +3,11 @@ import WorkHistory from '@/app/info/components/WorkHistory'
 import { getMyInfo } from '@/services/my-info'
 import { MyInfoData } from '@/interfaces'
 import WorkProcess from '@/app/info/components/WorkProcess'
+import { Metadata } from 'next'
 
+export const metadata: Metadata = {
+    title: 'info | sohee.park',
+}
 export default async function Page() {
     const myInfoData = await getMyInfo<MyInfoData>()
 

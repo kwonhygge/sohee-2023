@@ -9,9 +9,22 @@ import Dyne from '@/app/list/[id]/components/projects/Dyne'
 import WorkersDDay from '@/app/list/[id]/components/projects/WorkersDDay'
 
 import { PROJECT_NAMES, ProjectName } from '@/constants'
+import { Metadata } from 'next'
 
 type Params = {
     [key: string]: string | number | string[] | undefined
+}
+
+export async function generateMetadata({
+    params,
+}: {
+    params: Params
+}): Promise<Metadata> {
+    const data = await getProjectByOrderId<ProjectData>(Number(params?.id) || 1)
+
+    return {
+        title: `${data.title} | sohee.park`,
+    }
 }
 
 export default async function Page({ params }: { params: Params }) {
