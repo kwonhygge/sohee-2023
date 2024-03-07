@@ -3,6 +3,7 @@ import { Noto_Sans_KR } from 'next/font/google'
 import './globals.scss'
 import Header from '@/components/Header'
 import Script from 'next/script'
+import GoogleAnalytics from '@/lib/GoogleAnalytics'
 
 const notoSansKR = Noto_Sans_KR({ subsets: ['latin'] })
 
@@ -28,6 +29,9 @@ export default function RootLayout({
         `}
             </Script>
             <body className={notoSansKR.className}>
+                {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS ? (
+                    <GoogleAnalytics ga_id={process.env.GA_ID} />
+                ) : null}
                 <Header />
                 <main>{children}</main>
                 <noscript

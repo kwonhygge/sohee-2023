@@ -12,6 +12,7 @@ const nextConfig = {
     },
     env:{
         GTM_ID: process.env.GTM_ID,
+        GA_ID: process.env.GA_ID,
     },
     redirects: async () => {
         return [{
