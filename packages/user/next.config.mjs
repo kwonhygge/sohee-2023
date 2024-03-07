@@ -10,6 +10,9 @@ const nextConfig = {
             },
         ],
     },
+    env:{
+        GTM_ID: process.env.GTM_ID,
+    },
     redirects: async () => {
         return [{
             source: '/',
