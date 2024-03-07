@@ -29,7 +29,7 @@ export default function RootLayout({
         `}
             </Script>
             <body className={notoSansKR.className}>
-                {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS ? (
+                {process.env.GA_ID ? (
                     <GoogleAnalytics ga_id={process.env.GA_ID} />
                 ) : null}
                 <Header />
