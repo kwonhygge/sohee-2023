@@ -2,18 +2,18 @@ import type { ProjectCommonProps } from '@/interfaces'
 import TitleSection from '@/app/list/[id]/components/TitleSection'
 import { PROJECT_CLASS_NAMES } from '@/app/list/[id]/styles/project'
 import ContentSection from '@/app/list/[id]/components/ContentSection'
-import WorkersDdayCoverImage from '@/static/img/detail/workers-dday/cover.png'
+import WorkersDdayCoverImage from '@/static/img/detail/workers-dday/cover.webp'
 import Image from 'next/image'
-import Image1 from '@/static/img/detail/workers-dday/1.png'
-import Image2 from '@/static/img/detail/workers-dday/2.png'
-import Image3 from '@/static/img/detail/workers-dday/3.png'
-import Image4 from '@/static/img/detail/workers-dday/4.png'
-import Image5 from '@/static/img/detail/workers-dday/5.png'
-import Image6 from '@/static/img/detail/workers-dday/6.png'
-import Image7 from '@/static/img/detail/workers-dday/7.png'
-import Image8 from '@/static/img/detail/workers-dday/8.png'
-import Image9 from '@/static/img/detail/workers-dday/9.png'
-import Image10 from '@/static/img/detail/workers-dday/10.png'
+import Image1 from '@/static/img/detail/workers-dday/1.webp'
+import Image2 from '@/static/img/detail/workers-dday/2.webp'
+import Image3 from '@/static/img/detail/workers-dday/3.webp'
+import Image4 from '@/static/img/detail/workers-dday/4.webp'
+import Image5 from '@/static/img/detail/workers-dday/5.webp'
+import Image6 from '@/static/img/detail/workers-dday/6.webp'
+import Image7 from '@/static/img/detail/workers-dday/7.webp'
+import Image8 from '@/static/img/detail/workers-dday/8.webp'
+import Image9 from '@/static/img/detail/workers-dday/9.webp'
+import Image10 from '@/static/img/detail/workers-dday/10.webp'
 import ContentWrapper from '@/app/list/[id]/components/ContentWrapper'
 
 export default function WorkersDDay(props: ProjectCommonProps) {
@@ -124,7 +124,7 @@ export default function WorkersDDay(props: ProjectCommonProps) {
                                 <strong className="font-semibold">
                                     ‘일삶 속 특별한 선물’
                                 </strong>
-                                을 개발했습니다. 네이밍을 포함해 여러 콘텐츠에
+                                을 개발했습니다. 네이밍을 포함한 여러 콘텐츠에
                                 적용하여 워커스디데이가 신규 고객에게 쉽게
                                 각인될 수 있도록 합니다.
                             </p>

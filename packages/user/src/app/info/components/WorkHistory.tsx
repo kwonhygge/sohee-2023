@@ -1,7 +1,7 @@
 import classNames from 'classnames'
 import { manrope } from '@/styles/font'
-import MeaderLogo from '@/static/img/info/meader-logo.png'
-import AnimationCenterLogo from '@/static/img/info/animation-center-logo.png'
+import MeaderLogo from '@/static/img/info/meader-logo.webp'
+import AnimationCenterLogo from '@/static/img/info/animation-center-logo.webp'
 import Image from 'next/image'
 
 const LIST_ITEM_CLASS_NAME =
