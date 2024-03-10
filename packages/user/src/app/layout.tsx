@@ -4,6 +4,7 @@ import Header from '@/components/Header'
 import Script from 'next/script'
 import GoogleAnalytics from '@/lib/GoogleAnalytics'
 import { Metadata } from 'next'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 
 const notoSansKR = Noto_Sans_KR({ subsets: ['latin'] })
 
@@ -31,6 +32,7 @@ export default function RootLayout({
                 {process.env.GA_ID ? (
                     <GoogleAnalytics ga_id={process.env.GA_ID} />
                 ) : null}
+                <SpeedInsights />
                 <Header />
                 <main>{children}</main>
                 <noscript
