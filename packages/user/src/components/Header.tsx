@@ -21,7 +21,7 @@ export default function Header() {
                 </h1>
                 <ul className="flex items-center gap-x-13.5 text-sm lg:text-lg">
                     <li>
-                        <Link href="/profile">Profile</Link>
+                        <Link href={PAGE_URL.PROFILE}>Profile</Link>
                     </li>
                     <li>
                         <Link href={PAGE_URL.LIST}>Work</Link>

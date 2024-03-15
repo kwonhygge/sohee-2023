@@ -23,9 +23,19 @@ export default defineType({
       type: 'string',
     }),
     defineField({
-      name: 'introduction',
-      title: 'Introduction',
+      name: 'email',
+      title: 'Email',
       type: 'text',
+    }),
+    defineField({
+      name: 'brunchUrl',
+      title: 'Brunch URL',
+      type: 'string',
+    }),
+    defineField({
+      name: 'resumeUrl',
+      title: 'Resume URL',
+      type: 'string',
     }),
   ],
 })

@@ -29,5 +29,7 @@ export type MyInfoData = {
     name: string
     profileImageUrl: string
     position: string
-    introduction: string
+    email: string
+    brunchUrl: string
+    resumeUrl: string
 }
