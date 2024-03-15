@@ -1,5 +1,5 @@
 import type { TitleSectionProps } from '@/interfaces'
-import { manrope } from '@/styles/font'
+import { workSans } from '@/styles/font'
 import classNames from 'classnames'
 import { ProjectTypeMap, RoleTypeMap, ScopeTypeMap } from '@/utils'
 
@@ -15,7 +15,7 @@ export default function TitleSection(props: TitleSectionProps) {
             <dl
                 className={classNames(
                     'mt-5 grid grid-cols-[max-content,auto] gap-x-11 gap-y-1.5 border-y border-neo-black py-5.5 lg:text-xl',
-                    manrope.className,
+                    workSans.className,
                 )}
             >
                 <dt className="w-17 font-medium">Year.</dt>

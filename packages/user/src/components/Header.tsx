@@ -1,28 +1,24 @@
-import { manrope } from '@/styles/font'
+import { workSans } from '@/styles/font'
 import Link from 'next/link'
+import Logo from '@/static/svg/logo.svg'
+import { PAGE_URL } from '@/constants'
 export default function Header() {
     return (
         <header
-            className={`${manrope.className} fixed top-0 z-10 w-full py-4 backdrop-blur-xl`}
+            className={`${workSans.className} fixed top-0 z-10 w-full py-4 backdrop-blur-xl`}
         >
             <nav className="mx-auto flex w-full max-w-[1200px] items-center justify-between px-4 md:px-7.5 lg:px-0">
-                <h1 className="text-xl font-bold lg:text-3xl">
-                    <a href="/">hee</a>
+                <h1 className="">
+                    <Link href="/">
+                        <Logo />
+                    </Link>
                 </h1>
-                <ul className="flex items-center gap-x-13.5 text-sm lg:text-base">
+                <ul className="flex items-center gap-x-13.5 text-sm lg:text-lg">
                     <li>
-                        <Link href="/list">Works</Link>
+                        <Link href="/profile">Profile</Link>
                     </li>
                     <li>
-                        <Link href="/info">Info</Link>
-                    </li>
-                    <li>
-                        <Link
-                            href="https://brunch.co.kr/@dumbo"
-                            target="_blank"
-                        >
-                            Brunch
-                        </Link>
+                        <Link href={PAGE_URL.LIST}>Work</Link>
                     </li>
                 </ul>
             </nav>

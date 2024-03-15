@@ -1,6 +1,8 @@
 export const PROJECT_NAMES = {
     ANIMATION_CENTER: 'animationCenter',
+    H_ON_DREAM: 'hOnDream',
     BABY_DRAW: 'babyDraw',
+    MEADER: 'meader',
     DYNE: 'dyne',
     FLYING_EARTH: 'flyingEarth',
     SUN_SUN: 'sunsun',

@@ -15,6 +15,8 @@ import DyneMain from '@/static/img/main-covers/dyne-main.webp'
 import FlyingEarthMain from '@/static/img/main-covers/flying-earth-main.webp'
 import SunSunMain from '@/static/img/main-covers/sun-sun-main.webp'
 import TurnableMain from '@/static/img/main-covers/turnable-main.webp'
+import HOnDreamMain from '@/static/img/main-covers/h-on-dream-main.webp'
+import MeaderMain from '@/static/img/main-covers/meader-main.webp'
 
 import { StaticImageData } from 'next/image'
 
@@ -72,12 +74,32 @@ export const MainImageMap: Record<
         alt: 'sun sun',
         image: SunSunMain,
     },
-    [PROJECT_NAMES.TURNABLE]: {
-        alt: 'Turnable',
-        image: TurnableMain,
-    },
     [PROJECT_NAMES.WORKERS_DDAY]: {
         alt: 'Workers Dday',
         image: WorkersDdayMain,
     },
+    [PROJECT_NAMES.TURNABLE]: {
+        alt: 'Turnable',
+        image: TurnableMain,
+    },
+    [PROJECT_NAMES.H_ON_DREAM]: {
+        alt: 'H On Dream',
+        image: HOnDreamMain,
+    },
+    [PROJECT_NAMES.MEADER]: {
+        alt: 'Meader',
+        image: MeaderMain,
+    },
+}
+
+export const projectColorMap: Record<ProjectName, string> = {
+    [PROJECT_NAMES.ANIMATION_CENTER]: 'workers-dday-color',
+    [PROJECT_NAMES.BABY_DRAW]: '#4379CC',
+    [PROJECT_NAMES.DYNE]: '#1E213A',
+    [PROJECT_NAMES.FLYING_EARTH]: '#824259',
+    [PROJECT_NAMES.SUN_SUN]: '#719EE2',
+    [PROJECT_NAMES.WORKERS_DDAY]: '#5DBAF9',
+    [PROJECT_NAMES.H_ON_DREAM]: '#CE0673',
+    [PROJECT_NAMES.MEADER]: '#568AF2',
+    [PROJECT_NAMES.TURNABLE]: '#4F3270',
 }
