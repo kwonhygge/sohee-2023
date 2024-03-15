@@ -1,7 +1,8 @@
 import { workSans } from '@/styles/font'
 import Link from 'next/link'
-import Logo from '@/static/svg/logo.svg'
+import Logo from '@/static/img/logo.webp'
 import { PAGE_URL } from '@/constants'
+import Image from 'next/image'
 export default function Header() {
     return (
         <header
@@ -10,7 +11,12 @@ export default function Header() {
             <nav className="mx-auto flex w-full max-w-[1200px] items-center justify-between px-4 md:px-7.5 lg:px-0">
                 <h1 className="">
                     <Link href="/">
-                        <Logo />
+                        <Image
+                            src={Logo}
+                            alt={'logo image'}
+                            width={46}
+                            height={52}
+                        />
                     </Link>
                 </h1>
                 <ul className="flex items-center gap-x-13.5 text-sm lg:text-lg">
