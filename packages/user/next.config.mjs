@@ -9,6 +9,7 @@ const nextConfig = {
                 pathname: '/dtyzhivft/**',
             },
         ],
+        unoptimized: true,
     },
     env:{
         GTM_ID: process.env.GTM_ID,

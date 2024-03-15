@@ -14,6 +14,7 @@ export type ProjectData = {
 export type WorkData = {
     name: ProjectName
     title: string
+    thumbnailImg: string
     thumbnailDescription: string
     id: string
     date: string

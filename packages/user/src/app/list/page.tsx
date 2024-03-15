@@ -1,10 +1,10 @@
 import { MainImageMap } from '@/utils'
 
-import Image from 'next/image'
 import Link from 'next/link'
 import { PAGE_URL } from '@/constants'
 import { Metadata } from 'next'
 import { WORK_LIST } from '@/contents/list'
+import Image from 'next/image'
 
 export const metadata: Metadata = {
     title: 'portfolio | sohee.park',
@@ -27,13 +27,11 @@ export default function Home() {
                         >
                             <li className="group w-fit ">
                                 <Image
-                                    priority={index < 2}
                                     className="mp-px transition duration-300 ease-in-out group-hover:opacity-80"
-                                    src={currentImage.image}
+                                    src={project.thumbnailImg}
                                     alt={currentImage.alt}
                                     width={560}
                                     height={370}
-                                    placeholder={'blur'}
                                 />
                                 <div className="mt-5">
                                     <h2 className="whitespace-pre-line text-[28px] font-semibold leading-[1.4]">
