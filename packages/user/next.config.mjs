@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images:{
-        minimumCacheTTL: 31536000,
         remotePatterns: [
             {
                 protocol: 'https',
@@ -10,6 +9,7 @@ const nextConfig = {
                 pathname: '/dtyzhivft/**',
             },
         ],
+        unoptimized: true,
     },
     env:{
         GTM_ID: process.env.GTM_ID,
@@ -18,7 +18,7 @@ const nextConfig = {
     redirects: async () => {
         return [{
             source: '/',
-            destination: '/list',
+            destination: '/profile',
             permanent: true
         }]
     },

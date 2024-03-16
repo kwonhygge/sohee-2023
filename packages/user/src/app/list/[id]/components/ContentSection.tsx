@@ -1,7 +1,7 @@
 import { PROJECT_CLASS_NAMES } from '@/app/list/[id]/styles/project'
 import type { ContentSectionProps } from '@/interfaces'
 import classNames from 'classnames'
-import { manrope } from '@/styles/font'
+import { workSans } from '@/styles/font'
 
 export default function ContentSection(props: ContentSectionProps) {
     const { koreanTitle, englishTitle, content, image } = props
@@ -12,7 +12,7 @@ export default function ContentSection(props: ContentSectionProps) {
             <h3
                 className={classNames(
                     'font-semibold lg:text-lg',
-                    manrope.className,
+                    workSans.className,
                 )}
             >
                 {englishTitle}

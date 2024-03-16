@@ -1,5 +1,5 @@
-import { Manrope } from 'next/font/google'
+import { Work_Sans } from 'next/font/google'
 
-const manrope = Manrope({ subsets: ['latin'], style: 'normal' })
+const workSans = Work_Sans({ subsets: ['latin'], style: 'normal' })
 
-export { manrope }
+export { workSans }

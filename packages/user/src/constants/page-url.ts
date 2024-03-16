@@ -1,4 +1,5 @@
 export const PAGE_URL = {
+    PROFILE: '/profile',
     LIST: '/list',
-    DETAIL: (id: number) => `/list/${id}`,
+    DETAIL: (id: string) => `/list/${id}`,
 }

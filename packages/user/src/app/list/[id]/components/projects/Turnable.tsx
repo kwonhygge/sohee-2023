@@ -1,5 +1,4 @@
 import type { ProjectCommonProps } from '@/interfaces'
-import TitleSection from '@/app/list/[id]/components/TitleSection'
 import CoverImage from '@/static/img/detail/turnable/cover.webp'
 import Image from 'next/image'
 import Image1 from '@/static/img/detail/turnable/1.webp'
@@ -15,7 +14,7 @@ import ContentWrapper from '@/app/list/[id]/components/ContentWrapper'
 import ContentSection from '@/app/list/[id]/components/ContentSection'
 
 export default function Turnable(props: ProjectCommonProps) {
-    const { data } = props
+    console.log(props)
     return (
         <>
             <Image
@@ -25,7 +24,6 @@ export default function Turnable(props: ProjectCommonProps) {
                 placeholder={'blur'}
             />
             <div className={PROJECT_CLASS_NAMES.PROJECT_DETAIL_WRAPPER}>
-                <TitleSection data={data} />
                 <ContentWrapper
                     descriptionText={
                         'Art, become a Career \n' +
@@ -34,7 +32,7 @@ export default function Turnable(props: ProjectCommonProps) {
                         '턴에이블은 해외 진출을 꿈꾸는 차세대 아티스트를 위한 글로벌 교육 서비스입니다. 세계 무대에서 활동 중인 아티스트들이 튜터가 되어 전문적인 테크닉과 현실적인 구직 정보를 제공하고 있습니다. 치열한 경쟁 시장 속에서 턴에이블이 독보적인 커리어 플랫폼으로 자리 잡을 수 있도록 브랜드 정체성을 확립하고 아이덴티티를 디자인했습니다. 희망차고 긍정적인 메시지와 울림있게 퍼져나가는 그래픽으로 턴에이블만의 스테이지를 완성합니다.'
                     }
                     descriptionImage={
-                        <div className="grid gap-y-5">
+                        <div className="grid gap-y-2.5">
                             <Image
                                 src={Image1}
                                 alt={'turnable-1'}

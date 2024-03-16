@@ -1,13 +1,10 @@
-import { Noto_Sans_KR } from 'next/font/google'
 import './globals.scss'
-import Header from '@/components/Header'
 import Script from 'next/script'
 import GoogleAnalytics from '@/lib/GoogleAnalytics'
 import { Metadata } from 'next'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { Analytics } from '@vercel/analytics/react'
-
-const notoSansKR = Noto_Sans_KR({ subsets: ['latin'] })
+import { workSans } from '@/styles/font'
 
 export const metadata: Metadata = {
     title: 'portfolio | sohee.park',
@@ -29,14 +26,13 @@ export default function RootLayout({
         })(window,document,'script','dataLayer','${process.env.GTM_ID}');
         `}
             </Script>
-            <body className={notoSansKR.className}>
+            <body className={workSans.className}>
                 {process.env.GA_ID ? (
                     <GoogleAnalytics ga_id={process.env.GA_ID} />
                 ) : null}
                 <SpeedInsights />
                 <Analytics />
-                <Header />
-                <main>{children}</main>
+                {children}
                 <noscript
                     dangerouslySetInnerHTML={{
                         __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=${process.env.GTM_ID}" height="0" width="0" style="display: none; visibility: hidden;"></iframe>`,
