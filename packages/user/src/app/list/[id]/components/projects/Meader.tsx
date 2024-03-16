@@ -74,7 +74,7 @@ export default function Meader(props: ProjectCommonProps) {
                             '미더 직원들이 가장 필요로 하는 브랜드 컬러 리뉴얼을 진행했습니다. 새로운 컬러를 로고, 명함 등에 적용하여 브랜딩의 결과물을 직접 보고 만지며 의미 있는 프로젝트로 기억될 수 있도록 했습니다.'
                         }
                     />
-                    <div className={'grid gap-y-5'}>
+                    <div className={'grid gap-y-2.5'}>
                         <Image
                             src={Image3}
                             alt={'meader-3'}
@@ -98,7 +98,7 @@ export default function Meader(props: ProjectCommonProps) {
                             '채용 설명회, 마케팅 강연 등을 통해 미더의 이야기를 외부에 전했습니다. 브랜드의 철학과 스토리를 담은 캠페인을 통해 브랜드 인식을 높이고 잠재 고객을 확보했습니다.'
                         }
                     />
-                    <div className={'grid gap-y-5'}>
+                    <div className={'grid gap-y-2.5'}>
                         <Image
                             src={Image5}
                             alt={'meader-5'}

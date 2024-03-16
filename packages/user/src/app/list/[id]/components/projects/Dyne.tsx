@@ -52,7 +52,7 @@ export default function Dyne(props: ProjectCommonProps) {
                             '기업 철학을 기반으로 브랜드의 스토리와 슬로건을 개발했습니다. 슬로건의 경우, 의학용어 Forwarding을 활용하여 메인 타겟인 의사가 공감할 수 있는 가치를 담을 수 있도록 했습니다.'
                         }
                     />
-                    <div className={'grid gap-y-5'}>
+                    <div className={'grid gap-y-2.5'}>
                         <Image
                             src={Image3}
                             alt={'dyne-2'}
@@ -76,7 +76,7 @@ export default function Dyne(props: ProjectCommonProps) {
                             '브랜드 소개를 위한 사진 및 영상 기획에 참여했습니다. 일관되고 신뢰감 있는 브랜드 경험을 확보할 수 있도록 했습니다.'
                         }
                     />
-                    <div className={'grid gap-y-5'}>
+                    <div className={'grid gap-y-2.5'}>
                         <Image
                             src={Image5}
                             alt={'dyne-4'}

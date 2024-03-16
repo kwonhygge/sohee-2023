@@ -31,6 +31,10 @@ export async function generateMetadata({
 
 export default async function Page({ params }: { params: Params }) {
     const projectData = WORK_LIST.find((project) => project.id === params?.id)
+
+    if (!projectData) {
+        return <div>Not Found</div>
+    }
     const renderContent = (name: ProjectName) => {
         switch (name) {
             case PROJECT_NAMES.WORKERS_DDAY:
@@ -44,7 +48,15 @@ export default async function Page({ params }: { params: Params }) {
             case PROJECT_NAMES.BABY_DRAW:
                 return <BabyDraw data={projectData} />
             case PROJECT_NAMES.SUN_SUN:
-                return <SunSun data={projectData} />
+                return (
+                    <SunSun
+                        data={{
+                            ...projectData,
+                            thumbnailImg:
+                                '/static/img/detail/sun-sun/cover.webp',
+                        }}
+                    />
+                )
             case PROJECT_NAMES.TURNABLE:
                 return <Turnable data={projectData} />
             case PROJECT_NAMES.FLYING_EARTH:

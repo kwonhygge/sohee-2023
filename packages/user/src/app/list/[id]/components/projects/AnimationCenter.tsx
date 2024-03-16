@@ -2,7 +2,7 @@ import type { ProjectCommonProps } from '@/interfaces'
 import Image from 'next/image'
 import Image1 from '@/static/img/detail/animation-center/1.webp'
 import Image2 from '@/static/img/detail/animation-center/2.webp'
-import Image4 from '@/static/img/detail/animation-center/4.webp'
+import Image3 from '@/static/img/detail/animation-center/4.webp'
 import { PROJECT_CLASS_NAMES } from '@/app/list/[id]/styles/project'
 import BriefSection from '@/app/list/[id]/components/BriefSection'
 import SmallSection from '@/app/list/[id]/components/SmallSection'
@@ -39,7 +39,7 @@ export default function AnimationCenter(props: ProjectCommonProps) {
                         src={Image1}
                         alt={'animation-center-1'}
                         width={800}
-                        height={450}
+                        height={500}
                         placeholder={'blur'}
                     />
                 </div>
@@ -66,10 +66,10 @@ export default function AnimationCenter(props: ProjectCommonProps) {
                     />
                     <div>
                         <Image
-                            src={Image4}
+                            src={Image3}
                             alt={'animation-center-4'}
                             width={800}
-                            height={450}
+                            height={500}
                             placeholder={'blur'}
                         />
                         <span className="float-right text-xs">

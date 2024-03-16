@@ -53,7 +53,7 @@ export default function WorkersDDay(props: ProjectCommonProps) {
                             </span>
                         }
                     />
-                    <div className={'grid gap-y-5'}>
+                    <div className={'grid gap-y-2.5'}>
                         <Image
                             src={Image1}
                             alt={'workers-dday-1'}
@@ -101,7 +101,7 @@ export default function WorkersDDay(props: ProjectCommonProps) {
                             '아이덴티티를 기반으로 BX 디자이너와 함께 브로슈어를 포함한 브랜드 패키지를 제작했습니다. 다정한 축하의 인사와 다채로운 컬러감을 통해 기쁘고 즐거운 선물이 될 수 있도록 했습니다.'
                         }
                     />
-                    <div className={'grid gap-y-5'}>
+                    <div className={'grid gap-y-2.5'}>
                         <Image
                             src={Image5}
                             alt={'workers-dday-5'}

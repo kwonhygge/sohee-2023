@@ -5,6 +5,7 @@ import Image1 from '@/static/img/detail/flying-earth/1.webp'
 import Image3 from '@/static/img/detail/flying-earth/3.webp'
 import Image4 from '@/static/img/detail/flying-earth/4.webp'
 import Image5 from '@/static/img/detail/flying-earth/5.webp'
+import Image6 from '@/static/img/detail/flying-earth/6.webp'
 import BriefSection from '@/app/list/[id]/components/BriefSection'
 import SmallSection from '@/app/list/[id]/components/SmallSection'
 
@@ -84,12 +85,20 @@ export default function FlyingEarth(props: ProjectCommonProps) {
                             '비행지구의 산뜻한 출발을 위해 머그컵, 스티커, 리플렛 등의 공간 굿즈를 기획하고 제작했습니다. 브랜드 아이덴티티를 적극적으로 활용하여 일관되면서도 다채로운 브랜드 경험을 만들었습니다. 해당 굿즈들은 공간 오픈 일정에 맞춰 선착순으로 제공되었습니다.'
                         }
                     />
-                    <Image
-                        src={Image5}
-                        alt={'flying-earth-5'}
-                        width={800}
-                        height={440}
-                    />
+                    <div className="flex flex-col gap-y-2.5">
+                        <Image
+                            src={Image5}
+                            alt={'flying-earth-5'}
+                            width={800}
+                            height={440}
+                        />
+                        <Image
+                            src={Image6}
+                            alt={'flying-earth-6'}
+                            width={800}
+                            height={440}
+                        />
+                    </div>
                 </div>
             </section>
         </div>

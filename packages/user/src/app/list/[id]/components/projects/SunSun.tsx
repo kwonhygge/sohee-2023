@@ -3,9 +3,9 @@ import Image from 'next/image'
 import Image2 from '@/static/img/detail/sun-sun/2.webp'
 import Image3 from '@/static/img/detail/sun-sun/3.webp'
 import Image4 from '@/static/img/detail/sun-sun/4.webp'
+import Image8 from '@/static/img/detail/sun-sun/8.webp'
 import Image6 from '@/static/img/detail/sun-sun/6.webp'
 import Image7 from '@/static/img/detail/sun-sun/7.webp'
-import Image8 from '@/static/img/detail/sun-sun/8.webp'
 import Image9 from '@/static/img/detail/sun-sun/9.webp'
 import Image10 from '@/static/img/detail/sun-sun/10.webp'
 import { PROJECT_CLASS_NAMES } from '@/app/list/[id]/styles/project'
@@ -40,7 +40,7 @@ export default function BabyDraw(props: ProjectCommonProps) {
                             '주방 창문으로 바라본 하늘을 브랜드 모티브로 설정하여 자연을 닮은 색채와 일상적이고 편안한 분위기, 자연스러운 무드를 표현했습니다. '
                         }
                     />
-                    <div className={'grid gap-y-5'}>
+                    <div className={'grid gap-y-2.5'}>
                         <Image
                             src={Image2}
                             alt={'sun-sun-1'}
@@ -95,7 +95,7 @@ export default function BabyDraw(props: ProjectCommonProps) {
                             '스토리, 슬로건, 태그라인을 포함한 버벌 아이덴티티를 개발했습니다. 웹 페이지, 리플렛 등 다양한 영역에서 브랜드를 소개할 수 있도록 문장의 길이, 가치 포괄성 등을 고려했습니다.'
                         }
                     />
-                    <div className="flex flex-col gap-y-5">
+                    <div className="flex flex-col gap-y-2.5">
                         <Image
                             src={Image8}
                             alt={'sun-sun-8'}

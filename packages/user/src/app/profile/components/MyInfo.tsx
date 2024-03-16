@@ -27,8 +27,12 @@ export default function MyInfo(props: MyInfoProps) {
                 <p className={'mb-18 text-2xl'}>{data.position}</p>
                 <div className={'mb-12 flex  gap-x-5.5 text-base'}>
                     <span>{data.email}</span>
-                    <Link href={data.brunchUrl ?? '/'}>・브런치 스토리</Link>
-                    <Link href={data.resumeUrl ?? '/'}>・이력서 바로가기</Link>
+                    <Link href={data.brunchUrl ?? '/'} target={'_blank'}>
+                        ・브런치 스토리
+                    </Link>
+                    <Link href={data.resumeUrl ?? '/'} target={'_blank'}>
+                        ・이력서 바로가기
+                    </Link>
                 </div>
                 <p className="whitespace-pre-line text-xl leading-[1.8]">
                     {
