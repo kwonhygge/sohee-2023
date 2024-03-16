@@ -46,7 +46,15 @@ export default async function Page({ params }: { params: Params }) {
             case PROJECT_NAMES.ANIMATION_CENTER:
                 return <AnimationCenter data={projectData} />
             case PROJECT_NAMES.BABY_DRAW:
-                return <BabyDraw data={projectData} />
+                return (
+                    <BabyDraw
+                        data={{
+                            ...projectData,
+                            thumbnailImg:
+                                '/static/img/detail/baby-draw/cover.webp',
+                        }}
+                    />
+                )
             case PROJECT_NAMES.SUN_SUN:
                 return (
                     <SunSun

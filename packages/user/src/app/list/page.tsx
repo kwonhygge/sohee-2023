@@ -38,7 +38,7 @@ export default function Home() {
                                             height={370}
                                         />
                                         <div className="mt-5">
-                                            <h2 className="whitespace-pre-line text-[28px] font-semibold leading-[1.4]">
+                                            <h2 className="whitespace-pre-line text-[28px] font-bold leading-[1.4]">
                                                 {project.title}
                                             </h2>
 

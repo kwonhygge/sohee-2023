@@ -10,7 +10,7 @@ export default function BriefSection(props: BriefSectionProps) {
         <section className={'border-t-[5px] border-black pt-7.5'}>
             <h2
                 className={
-                    'whitespace-pre-line text-4xl font-semibold leading-[1.4]'
+                    'whitespace-pre-line text-4xl font-bold leading-[1.4]'
                 }
             >
                 {data.title}

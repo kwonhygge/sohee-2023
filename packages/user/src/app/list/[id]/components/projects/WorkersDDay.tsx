@@ -35,7 +35,7 @@ export default function WorkersDDay(props: ProjectCommonProps) {
                     'mt-20 border-t border-black border-opacity-80 pt-10'
                 }
             >
-                <h3 className={'mb-10 text-xl font-bold'}>프로젝트 더보기</h3>
+                <h3 className={'mb-15 text-xl font-bold'}>프로젝트 더보기</h3>
                 <div className={PROJECT_CLASS_NAMES.SMALL_SECTION_WRAPPER}>
                     <SmallSection
                         title={'브랜드 전략'}
