@@ -59,7 +59,9 @@ export default function BabyDraw(props: ProjectCommonProps) {
                             '태그라인을 포함한 브랜디드 콘텐츠로 6개월간 광고를 집행했고 최초 ROAS 300%, 평균 ROAS 200%대를 달성했습니다.'
                         }
                     />
-                    <div className={'flex justify-between'}>
+                    <div
+                        className={'flex flex-col justify-between lg:flex-row'}
+                    >
                         <Image
                             src={Image2}
                             alt={'baby-draw-2'}

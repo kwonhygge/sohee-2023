@@ -65,7 +65,11 @@ export default function BabyDraw(props: ProjectCommonProps) {
                         }
                     />
                     <div className={'flex flex-col'}>
-                        <div className={'mb-2 flex justify-between'}>
+                        <div
+                            className={
+                                'mb-2 flex flex-col justify-between gap-2 lg:flex-row lg:gap-0'
+                            }
+                        >
                             {' '}
                             <Image
                                 src={Image4}
