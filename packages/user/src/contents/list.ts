@@ -53,9 +53,9 @@ export const WORK_LIST: WorkData[] = [
         thumbnailImg: '/static/img/main-covers/meader-main.webp',
         thumbnailDescription:
             '미더의 브랜딩팀 팀리더로서 내부 인터벌 브랜딩을 맡아 진행했습니다.\n' +
-            '기업 행사를 주최하며 구성원에게 브랜드 가치를 내재화하고 잠재고객을 확보했습니다.',
+            '기업 행사를 주최하며 구성원에게 기업 가치를 내재화하고 잠재고객을 확보했습니다.',
         name: PROJECT_NAMES.MEADER,
-        date: '2022-23',
+        date: '2023',
         scale: '4인 프로젝트',
         contribution: {
             value: 70,
@@ -70,7 +70,7 @@ export const WORK_LIST: WorkData[] = [
             '골프웨어 셀렉샵 베이비드로우의 마케팅을 진행했습니다.\n' +
             '태그라인 ‘삶의 비거리를 넓히는 골프웨어 셀렉샵’으로 ROAS 300%를 달성했습니다.',
         name: PROJECT_NAMES.BABY_DRAW,
-        date: '2022-23',
+        date: '2022',
         scale: '4인 프로젝트',
         contribution: {
             value: 70,
@@ -97,10 +97,10 @@ export const WORK_LIST: WorkData[] = [
         title: '의료기기 스타트업 \n' + '다인메디컬그룹 웹사이트 리뉴얼',
         thumbnailImg: '/static/img/main-covers/dyne-main.webp',
         thumbnailDescription:
-            '의료기기 스타트업 다인메디컬그룹의 웹사이트 리뉴얼의 디렉터를 맡았습니다.\n' +
+            '의료기기 스타트업 다인메디컬그룹의 웹사이트 리뉴얼 디렉터를 맡았습니다.\n' +
             '또한 소비자가 공감할 수 있는 내용을 바탕으로 UX라이팅을 진행했습니다.',
         name: PROJECT_NAMES.DYNE,
-        date: '2022-23',
+        date: '2023',
         scale: '8인 프로젝트',
         contribution: {
             value: 60,

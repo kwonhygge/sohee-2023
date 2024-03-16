@@ -2,7 +2,7 @@ const WORK_EXPERIENCE = [
     {
         company: '미더',
         position: '팀장 · 브랜딩팀',
-        period: '2021. 03 ~ 2023. 03',
+        period: '2021.03 ~ 2023.03',
         work:
             '· 브랜딩 및 마케팅 서비스 제공\n' +
             '· 내외부 파트너 협업 리드\n' +
@@ -17,7 +17,7 @@ const WORK_EXPERIENCE = [
     {
         company: '서울산업진흥원',
         position: '사원 · 애니타운팀 (파견직)',
-        period: '2018. 11 ~ 2019. 12',
+        period: '2018.11 ~ 2019.12',
         work: '· 복합문화공간 만화의집 운영 및 홍보',
     },
 ]
