@@ -1,5 +1,5 @@
-import { ProjectData } from '@/interfaces'
+import { WorkData } from '@/interfaces'
 
 export type ProjectCommonProps = {
-    data: ProjectData
+    data?: WorkData
 }
