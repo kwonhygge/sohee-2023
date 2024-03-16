@@ -80,7 +80,7 @@ export default async function Page({ params }: { params: Params }) {
         <>
             <Header isDarkTheme />
             <main>
-                <div className="mb-13 bg-white">
+                <div className="mb-13 bg-white px-4 lg:px-0">
                     {renderContent(
                         projectData?.name ?? PROJECT_NAMES.WORKERS_DDAY,
                     )}

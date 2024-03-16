@@ -10,10 +10,10 @@ export default function Header(props: HeaderProps) {
     return (
         <header
             className={classNames(
-                `fixed top-0 z-10 w-full py-4 backdrop-blur-xl`,
+                `fixed top-0 z-10 w-full py-2 backdrop-blur-xl`,
                 {
                     'bg-white': !isDarkTheme,
-                    'bg-black': isDarkTheme,
+                    'bg-[#282828]': isDarkTheme,
                 },
             )}
         >

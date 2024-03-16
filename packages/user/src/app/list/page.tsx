@@ -17,7 +17,7 @@ export default function Home() {
         <>
             <Header />
             <main>
-                <div className="flex min-h-screen flex-col items-center pb-32 pt-48">
+                <div className="flex min-h-screen flex-col items-center pb-32 pt-20 lg:pt-48">
                     <ul className="flex max-w-[1200px] flex-wrap justify-center gap-x-20 gap-y-25 px-4 lg:justify-normal lg:px-0">
                         {WORK_LIST.map((project, index) => {
                             const currentImage = MainImageMap[project.name]
@@ -38,11 +38,11 @@ export default function Home() {
                                             height={370}
                                         />
                                         <div className="mt-5">
-                                            <h2 className="whitespace-pre-line text-[28px] font-bold leading-[1.4]">
+                                            <h2 className="whitespace-pre-line text-[32px] font-bold leading-[1.4] text-[#282828]">
                                                 {project.title}
                                             </h2>
 
-                                            <p className="mt-8 whitespace-pre-line text-base leading-relaxed">
+                                            <p className="mt-4 whitespace-pre-line text-base leading-relaxed">
                                                 {project.thumbnailDescription}
                                             </p>
                                             <div className="mt-7.5 flex items-center gap-x-3 border-t border-black pt-5 text-sm">

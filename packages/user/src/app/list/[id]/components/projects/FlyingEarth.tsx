@@ -12,7 +12,7 @@ import SmallSection from '@/app/list/[id]/components/SmallSection'
 export default function FlyingEarth(props: ProjectCommonProps) {
     const { data } = props
     return (
-        <div className={'mx-auto max-w-[800px] pt-48'}>
+        <div className={'mx-auto max-w-[800px] pt-32 lg:pt-48'}>
             <BriefSection
                 data={data}
                 introduction={

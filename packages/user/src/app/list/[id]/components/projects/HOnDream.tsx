@@ -13,7 +13,7 @@ export default function HOnDream(props: ProjectCommonProps) {
     if (!data) return <></>
 
     return (
-        <div className={'mx-auto max-w-[800px] pt-48'}>
+        <div className={'mx-auto max-w-[800px] pt-32 lg:pt-48'}>
             <BriefSection
                 data={data}
                 introduction={
