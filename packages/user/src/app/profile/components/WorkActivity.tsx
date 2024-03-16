@@ -25,7 +25,7 @@ export default function WorkActivity() {
     return (
         <section
             className={
-                'flex flex-col justify-between border-t border-black pt-10 lg:flex-row'
+                'flex flex-col justify-between border-t border-[#282828] pt-10 lg:flex-row'
             }
         >
             <h2 className={'lg:mb:0 mb-4 text-xl font-bold lg:text-2xl'}>
@@ -37,7 +37,7 @@ export default function WorkActivity() {
                         <li
                             key={index}
                             className={
-                                'flex w-full items-center justify-between border-b border-black border-opacity-10 pb-7.5'
+                                'flex w-full items-center justify-between border-b border-[#282828] border-opacity-10 pb-7.5'
                             }
                         >
                             <p className={''}>

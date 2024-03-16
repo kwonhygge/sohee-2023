@@ -16,7 +16,7 @@ export default function WorkSkill() {
     return (
         <section
             className={
-                'flex flex-col justify-between border-t border-black pt-10 lg:flex-row'
+                'flex flex-col justify-between border-t border-[#282828] pt-10 lg:flex-row'
             }
         >
             <h2 className={'lg:mb:0 mb-4 text-xl font-bold lg:text-2xl'}>
@@ -40,7 +40,7 @@ export default function WorkSkill() {
                         <li
                             key={index}
                             className={
-                                'rounded-3xl border border-black border-opacity-10 bg-white px-5 py-2 text-base text-black'
+                                'rounded-3xl border border-[#282828] border-opacity-10 bg-white px-5 py-2 text-base text-black'
                             }
                         >
                             {tool}

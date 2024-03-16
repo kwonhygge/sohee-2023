@@ -13,7 +13,7 @@ export default function MyInfo(props: MyInfoProps) {
     const { data } = props
 
     return (
-        <section className="flex flex-col gap-x-15 border-t-[5px] border-black lg:flex-row">
+        <section className="flex flex-col gap-x-15 border-t-[5px] border-[#282828] lg:flex-row">
             <Suspense fallback={<Skeleton width={378} height={448} />}>
                 <Image
                     width={378}

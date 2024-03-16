@@ -7,7 +7,7 @@ export default function BriefSection(props: BriefSectionProps) {
     if (!data) return <></>
 
     return (
-        <section className={'border-t-[5px] border-black pt-7.5'}>
+        <section className={'border-t-[5px] border-[#282828] pt-7.5'}>
             <h2
                 className={
                     'whitespace-pre-line text-2xl font-bold leading-[1.4] lg:text-4xl'

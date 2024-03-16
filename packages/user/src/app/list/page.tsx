@@ -45,7 +45,7 @@ export default function Home() {
                                             <p className="mt-4 whitespace-pre-line text-base leading-relaxed">
                                                 {project.thumbnailDescription}
                                             </p>
-                                            <div className="mt-7.5 flex items-center gap-x-3 border-t border-black pt-5 text-sm">
+                                            <div className="mt-7.5 flex items-center gap-x-3 border-t border-[#282828] pt-5 text-sm">
                                                 <span>{project.date}</span>
                                                 <div className="h-[11px] w-[0.7px] bg-[#8A8A8A]" />
                                                 <span>{project.scale}</span>

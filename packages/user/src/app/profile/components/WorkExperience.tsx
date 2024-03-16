@@ -25,7 +25,7 @@ export default function WorkExperience() {
     return (
         <section
             className={
-                'flex flex-col justify-between border-t border-black pt-10 lg:flex-row'
+                'flex flex-col justify-between border-t border-[#282828] pt-10 lg:flex-row'
             }
         >
             <h2 className={'lg:mb:0 mb-4 text-xl font-bold lg:text-2xl'}>
@@ -35,7 +35,7 @@ export default function WorkExperience() {
                 {WORK_EXPERIENCE.map((experience, index) => (
                     <li
                         key={index}
-                        className="grid gap-y-4 border-b border-black border-opacity-10 pb-4 last:border-b-0 last:pb-0 lg:w-[720px] lg:gap-y-7.5 lg:pb-7.5"
+                        className="grid gap-y-4 border-b border-[#282828] border-opacity-10 pb-4 last:border-b-0 last:pb-0 lg:w-[720px] lg:gap-y-7.5 lg:pb-7.5"
                     >
                         <div className="flex flex-col justify-between lg:flex-row lg:items-center">
                             <h3 className={'text-lg lg:text-xl'}>

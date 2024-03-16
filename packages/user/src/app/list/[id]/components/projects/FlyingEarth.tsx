@@ -29,7 +29,7 @@ export default function FlyingEarth(props: ProjectCommonProps) {
             />
             <section
                 className={
-                    'mt-20 border-t border-black border-opacity-80 pt-10'
+                    'mt-20 border-t border-[#282828] border-opacity-80 pt-10'
                 }
             >
                 <h3 className={'mb-15 text-xl font-bold'}>프로젝트 더보기</h3>
