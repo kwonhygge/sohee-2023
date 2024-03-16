@@ -10,7 +10,7 @@ export default function BriefSection(props: BriefSectionProps) {
         <section className={'border-t-[5px] border-[#282828] pt-7.5'}>
             <h2
                 className={
-                    'whitespace-pre-line text-2xl font-bold leading-[1.4] lg:text-4xl'
+                    'whitespace-pre-line text-2xl font-bold lg:text-4xl lg:leading-[1.6]'
                 }
             >
                 {data.title}
@@ -39,7 +39,11 @@ export default function BriefSection(props: BriefSectionProps) {
             <span className={'float-right text-xs'}>{imageCaption}</span>
             <div className={'mb-15 mt-12'}>
                 <h4 className={'mb-5 font-bold lg:text-lg'}>프로젝트 소개</h4>
-                <p className={'whitespace-pre-line leading-[1.8] lg:text-lg'}>
+                <p
+                    className={
+                        'whitespace-pre-line lg:text-lg lg:leading-[1.8]'
+                    }
+                >
                     {introduction}
                 </p>
             </div>
@@ -60,7 +64,11 @@ export default function BriefSection(props: BriefSectionProps) {
                         기여도 {data.contribution.value}%
                     </span>
                 </h4>
-                <p className={'whitespace-pre-line leading-[1.8] lg:text-lg'}>
+                <p
+                    className={
+                        'whitespace-pre-line lg:text-lg lg:leading-[1.8]'
+                    }
+                >
                     {roles}
                 </p>
             </div>

@@ -48,7 +48,7 @@ export default function WorkExperience() {
                                 {experience.period}
                             </span>
                         </div>
-                        <p className="whitespace-pre-line leading-[1.8]">
+                        <p className="whitespace-pre-line lg:leading-[1.8]">
                             {experience.work}
                         </p>
                     </li>

@@ -38,11 +38,11 @@ export default function Home() {
                                             height={370}
                                         />
                                         <div className="mt-5">
-                                            <h2 className="whitespace-pre-line text-[28px] font-bold leading-[1.4] text-[#282828]">
+                                            <h2 className="whitespace-pre-line text-[28px] font-bold text-[#282828] lg:leading-[1.6]">
                                                 {project.title}
                                             </h2>
 
-                                            <p className="mt-4 whitespace-pre-line text-base leading-relaxed">
+                                            <p className="mt-4 whitespace-pre-line text-base lg:leading-relaxed">
                                                 {project.thumbnailDescription}
                                             </p>
                                             <div className="mt-7.5 flex items-center gap-x-3 border-t border-[#282828] pt-5 text-sm">

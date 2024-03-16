@@ -40,7 +40,7 @@ export default function MyInfo(props: MyInfoProps) {
                         ・ 이력서 바로가기
                     </Link>
                 </div>
-                <p className="whitespace-pre-line leading-[1.8] lg:text-xl">
+                <p className="whitespace-pre-line lg:text-xl lg:leading-[1.8]">
                     {
                         '다정한 시선을 담아 브랜드의 이야기를 만듭니다.\n목표를 향해 부지런히 달린 후 포근하게 쉬는 일상을 좋아합니다.\n고객과 함께 정갈하게 나이들어갈 수 있는 브랜드를 만들고 싶습니다.'
                     }
