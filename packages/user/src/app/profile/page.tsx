@@ -17,7 +17,7 @@ export default async function Page() {
         <>
             <Header />
             <main>
-                <div className="mx-auto flex max-w-[1100px] flex-col gap-y-25 pb-25 lg:pt-52">
+                <div className="mx-auto flex max-w-[1100px] flex-col gap-y-12 px-4 pb-25 pt-24 lg:gap-y-25 lg:px-0 lg:pt-52">
                     <MyInfo data={myInfoData} />
                     <WorkExperience />
                     <WorkSkill />

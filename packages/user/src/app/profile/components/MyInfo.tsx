@@ -13,7 +13,7 @@ export default function MyInfo(props: MyInfoProps) {
     const { data } = props
 
     return (
-        <section className="flex gap-x-15 border-t-[5px] border-black">
+        <section className="flex flex-col gap-x-15 border-t-[5px] border-black lg:flex-row">
             <Suspense fallback={<Skeleton width={378} height={448} />}>
                 <Image
                     width={378}
@@ -23,9 +23,15 @@ export default function MyInfo(props: MyInfoProps) {
                 />
             </Suspense>
             <div className={'pt-12.5'}>
-                <h2 className="mb-7 text-4xl font-bold">{`${data.name}`}</h2>
-                <p className={'mb-18 text-2xl'}>{data.position}</p>
-                <div className={'mb-12 flex  gap-x-5.5 text-base'}>
+                <h2 className="text-2xl font-bold lg:mb-7 lg:text-4xl">{`${data.name}`}</h2>
+                <p className={'mb-6 text-lg lg:mb-18 lg:text-2xl'}>
+                    {data.position}
+                </p>
+                <div
+                    className={
+                        'mb-5 flex gap-x-5.5 text-sm lg:mb-12 lg:text-base'
+                    }
+                >
                     <span>{data.email}</span>
                     <Link href={data.brunchUrl ?? '/'} target={'_blank'}>
                         ・ 브런치 스토리
@@ -34,7 +40,7 @@ export default function MyInfo(props: MyInfoProps) {
                         ・ 이력서 바로가기
                     </Link>
                 </div>
-                <p className="whitespace-pre-line text-xl leading-[1.8]">
+                <p className="whitespace-pre-line leading-[1.8] lg:text-xl">
                     {
                         '다정한 시선을 담아 브랜드의 이야기를 만듭니다.\n목표를 향해 부지런히 달린 후 포근하게 쉬는 일상을 좋아합니다.\n고객과 함께 정갈하게 나이들어갈 수 있는 브랜드를 만들고 싶습니다.'
                     }

@@ -23,8 +23,14 @@ const WORK_ACTIVITIES = [
 ]
 export default function WorkActivity() {
     return (
-        <section className={'flex justify-between border-t border-black pt-10'}>
-            <h2 className={'text-2xl font-bold'}>활동 및 자격증</h2>
+        <section
+            className={
+                'flex flex-col justify-between border-t border-black pt-10 lg:flex-row'
+            }
+        >
+            <h2 className={'lg:mb:0 mb-4 text-xl font-bold lg:text-2xl'}>
+                활동 및 자격증
+            </h2>
             <div className={'w-[700px]'}>
                 <ul className={'grid w-full gap-y-7.5'}>
                     {WORK_ACTIVITIES.map((activity, index) => (
@@ -35,7 +41,7 @@ export default function WorkActivity() {
                             }
                         >
                             <p className={''}>
-                                <strong className={'mr-6 text-xl font-bold'}>
+                                <strong className={'mr-6 font-bold lg:text-xl'}>
                                     {activity.name}
                                 </strong>
                                 {activity.agency}

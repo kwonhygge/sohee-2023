@@ -23,22 +23,30 @@ const WORK_EXPERIENCE = [
 ]
 export default function WorkExperience() {
     return (
-        <section className={'flex justify-between border-t border-black pt-10'}>
-            <h2 className={'text-2xl font-bold'}>업무 경험</h2>
+        <section
+            className={
+                'flex flex-col justify-between border-t border-black pt-10 lg:flex-row'
+            }
+        >
+            <h2 className={'lg:mb:0 mb-4 text-xl font-bold lg:text-2xl'}>
+                업무 경험
+            </h2>
             <ul className="flex flex-col gap-y-7.5 ">
                 {WORK_EXPERIENCE.map((experience, index) => (
                     <li
                         key={index}
-                        className="grid w-[720px] gap-y-7.5 border-b border-black border-opacity-10 pb-7.5 last:border-b-0 last:pb-0"
+                        className="grid gap-y-4 border-b border-black border-opacity-10 pb-4 last:border-b-0 last:pb-0 lg:w-[720px] lg:gap-y-7.5 lg:pb-7.5"
                     >
-                        <div className="flex items-center justify-between">
-                            <h3 className={'text-xl'}>
+                        <div className="flex flex-col justify-between lg:flex-row lg:items-center">
+                            <h3 className={'text-lg lg:text-xl'}>
                                 <strong className={'mr-4 font-bold'}>
                                     {experience.company}
                                 </strong>
                                 <span>{experience.position}</span>
                             </h3>
-                            <span className="text-lg">{experience.period}</span>
+                            <span className="lg:text-lg">
+                                {experience.period}
+                            </span>
                         </div>
                         <p className="whitespace-pre-line leading-[1.8]">
                             {experience.work}

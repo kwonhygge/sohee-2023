@@ -14,10 +14,16 @@ const WORK_SKILL = {
 }
 export default function WorkSkill() {
     return (
-        <section className={'flex justify-between border-t border-black pt-10'}>
-            <h2 className={'text-2xl font-bold'}>주요 역량</h2>
-            <div className={'max-w-[700px] '}>
-                <ul className={'mb-2.5 flex flex-wrap gap-x-1'}>
+        <section
+            className={
+                'flex flex-col justify-between border-t border-black pt-10 lg:flex-row'
+            }
+        >
+            <h2 className={'lg:mb:0 mb-4 text-xl font-bold lg:text-2xl'}>
+                주요 역량
+            </h2>
+            <div className={'lg:max-w-[700px] '}>
+                <ul className={'mb-2.5 flex flex-wrap gap-1'}>
                     {WORK_SKILL.skills.map((skill, index) => (
                         <li
                             key={index}
