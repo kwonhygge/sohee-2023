@@ -1,5 +1,4 @@
 import './globals.scss'
-import Header from '@/components/Header'
 import Script from 'next/script'
 import GoogleAnalytics from '@/lib/GoogleAnalytics'
 import { Metadata } from 'next'
@@ -33,8 +32,7 @@ export default function RootLayout({
                 ) : null}
                 <SpeedInsights />
                 <Analytics />
-                <Header />
-                <main>{children}</main>
+                {children}
                 <noscript
                     dangerouslySetInnerHTML={{
                         __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=${process.env.GTM_ID}" height="0" width="0" style="display: none; visibility: hidden;"></iframe>`,

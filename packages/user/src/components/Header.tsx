@@ -1,18 +1,35 @@
-import { workSans } from '@/styles/font'
 import Link from 'next/link'
 import Logo from '@/static/img/logo.webp'
+import LogoWhite from '@/static/img/logo-white.webp'
 import { PAGE_URL } from '@/constants'
 import Image from 'next/image'
-export default function Header() {
+import { HeaderProps } from '@/interfaces'
+import classNames from 'classnames'
+export default function Header(props: HeaderProps) {
+    const { isDarkTheme } = props
     return (
         <header
-            className={`${workSans.className} fixed top-0 z-10 w-full py-4 backdrop-blur-xl`}
+            className={classNames(
+                `fixed top-0 z-10 w-full py-4 backdrop-blur-xl`,
+                {
+                    'bg-white': !isDarkTheme,
+                    'bg-black': isDarkTheme,
+                },
+            )}
         >
-            <nav className="mx-auto flex w-full max-w-[1200px] items-center justify-between px-4 md:px-7.5 lg:px-0">
+            <nav
+                className={classNames(
+                    'mx-auto flex w-full max-w-[1200px] items-center justify-between px-4 md:px-7.5 lg:px-0',
+                    {
+                        'text-black': !isDarkTheme,
+                        'text-white': isDarkTheme,
+                    },
+                )}
+            >
                 <h1 className="">
                     <Link href="/">
                         <Image
-                            src={Logo}
+                            src={isDarkTheme ? LogoWhite : Logo}
                             alt={'logo image'}
                             width={46}
                             height={52}

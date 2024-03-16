@@ -1,4 +1,5 @@
 export * from './services/data'
+export * from './components/header'
 export * from './parts/list/detail/briefSection'
 export * from './parts/list/detail/smallSection'
 export * from './parts/list/detail/contentSection'

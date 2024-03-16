@@ -11,6 +11,7 @@ import { Metadata } from 'next'
 import { WORK_LIST } from '@/contents/list'
 import HOnDream from '@/app/list/[id]/components/projects/HOnDream'
 import Meader from '@/app/list/[id]/components/projects/Meader'
+import Header from '@/components/Header'
 
 type Params = {
     [key: string]: string | number | string[] | undefined
@@ -56,8 +57,15 @@ export default async function Page({ params }: { params: Params }) {
     }
 
     return (
-        <div className="mb-13 bg-white">
-            {renderContent(projectData?.name ?? PROJECT_NAMES.WORKERS_DDAY)}
-        </div>
+        <>
+            <Header isDarkTheme />
+            <main>
+                <div className="mb-13 bg-white">
+                    {renderContent(
+                        projectData?.name ?? PROJECT_NAMES.WORKERS_DDAY,
+                    )}
+                </div>
+            </main>
+        </>
     )
 }
