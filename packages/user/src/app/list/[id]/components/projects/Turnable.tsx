@@ -1,5 +1,4 @@
 import type { ProjectCommonProps } from '@/interfaces'
-import TitleSection from '@/app/list/[id]/components/TitleSection'
 import CoverImage from '@/static/img/detail/turnable/cover.webp'
 import Image from 'next/image'
 import Image1 from '@/static/img/detail/turnable/1.webp'
@@ -15,7 +14,7 @@ import ContentWrapper from '@/app/list/[id]/components/ContentWrapper'
 import ContentSection from '@/app/list/[id]/components/ContentSection'
 
 export default function Turnable(props: ProjectCommonProps) {
-    const { data } = props
+    console.log(props)
     return (
         <>
             <Image
@@ -25,7 +24,6 @@ export default function Turnable(props: ProjectCommonProps) {
                 placeholder={'blur'}
             />
             <div className={PROJECT_CLASS_NAMES.PROJECT_DETAIL_WRAPPER}>
-                <TitleSection data={data} />
                 <ContentWrapper
                     descriptionText={
                         'Art, become a Career \n' +
