@@ -59,7 +59,7 @@ export default function BriefSection(props: BriefSectionProps) {
                         style={{
                             color: data.contribution.color,
                         }}
-                        className={'text-sm font-light'}
+                        className={'text-sm font-normal'}
                     >
                         기여도 {data.contribution.value}%
                     </span>

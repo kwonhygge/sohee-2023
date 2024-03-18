@@ -49,10 +49,10 @@ export const WORK_LIST: WorkData[] = [
     },
     {
         id: '4',
-        title: '광고 에이전시\n' + '미더 인터벌 브랜딩',
+        title: '광고 에이전시\n' + '미더 인터널 브랜딩',
         thumbnailImg: '/static/img/main-covers/meader-main.webp',
         thumbnailDescription:
-            '미더의 브랜딩팀 팀리더로서 내부 인터벌 브랜딩을 맡아 진행했습니다.\n' +
+            '미더의 브랜딩팀 팀리더로서 내부 인터널 브랜딩을 맡아 진행했습니다.\n' +
             '기업 행사를 주최하며 구성원에게 기업 가치를 내재화하고 잠재고객을 확보했습니다.',
         name: PROJECT_NAMES.MEADER,
         date: '2023',
